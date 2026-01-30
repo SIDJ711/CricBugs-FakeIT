@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+# CricBugs 🐛
 
-## Project info
+**Live Cricket Chaos (Parody Project)**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+CricBugs is a **parody cricket website** built for a competitive event.
+It humorously exaggerates live cricket coverage—overreactions, glitches, and dramatic commentary—while maintaining **correct cricket logic**.
 
-## How can I edit this code?
+All matches, scores, commentary, and statistics are **fictional and auto-generated**.
 
-There are several ways of editing your application.
+## 🏏 What’s Parodied
 
-**Use Lovable**
+* Over-dramatic live commentary
+* Fan overreactions to routine events
+* Endless reviews and umpire confusion
+* Sensationalized cricket media moments
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Example: *“India wins toss. Internet loses sanity.”*
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Key Features
 
-**Use your preferred IDE**
+* Live fictional match simulation
+* **6 balls per over** (ball-based logic)
+* Dynamic parody commentary (“Latest Bug 🐛”)
+* Overreaction meter (0–100%)
+* Crowd mood engine with live emoji reactions
+* Animated, interactive UI
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+* React + TypeScript
+* Vite
+* Tailwind CSS
+* Framer Motion
+* Lucide Icons
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ▶️ Run Locally
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+bash
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+## 🚫 Disclaimer
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+CricBugs is a parody project created for educational and competition purposes only.
+It is **not affiliated** with Cricbuzz or any official cricket organization.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Embrace the chaos. 🐛🔥**
+URL - https://cric-bugs-fake-it.vercel.app/

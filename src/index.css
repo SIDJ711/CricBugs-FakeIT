@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CricBugs Design System - Warm Chaos Theme */
+
+@layer base {
+  :root {
+    /* Core Warm Chaos Palette */
+    --background: 33 100% 96%; /* #FFF7ED warm cream */
+    --foreground: 20 14% 10%; /* #1C1917 near black */
+
+    --card: 30 100% 83%; /* #FED7AA peachy orange */
+    --card-foreground: 20 14% 10%;
+
+    --popover: 33 100% 96%;
+    --popover-foreground: 20 14% 10%;
+
+    --primary: 21 90% 48%; /* #EA580C burnt orange */
+    --primary-foreground: 33 100% 96%;
+
+    --secondary: 15 60% 30%; /* #7C2D12 dark brown */
+    --secondary-foreground: 33 100% 96%;
+
+    --muted: 30 50% 90%;
+    --muted-foreground: 20 10% 40%;
+
+    --accent: 45 100% 60%; /* Golden yellow for highlights */
+    --accent-foreground: 20 14% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 33 100% 96%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 33 100% 96%;
+
+    --border: 30 30% 80%;
+    --input: 30 30% 85%;
+    --ring: 21 90% 48%;
+
+    --radius: 0.75rem;
+
+    /* Custom CricBugs tokens */
+    --chaos-orange: 21 90% 48%;
+    --chaos-cream: 33 100% 96%;
+    --chaos-peach: 30 100% 83%;
+    --chaos-brown: 15 60% 30%;
+    --chaos-gold: 45 100% 55%;
+    --bug-green: 142 60% 40%;
+    
+    /* Gradients as CSS custom properties */
+    --gradient-hero: linear-gradient(135deg, hsl(21 90% 48%) 0%, hsl(30 100% 60%) 50%, hsl(45 100% 55%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(30 100% 88%) 0%, hsl(30 100% 78%) 100%);
+    --gradient-fire: linear-gradient(135deg, hsl(0 80% 50%) 0%, hsl(30 100% 50%) 50%, hsl(45 100% 60%) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px -2px hsl(21 90% 48% / 0.15);
+    --shadow-hover: 0 8px 30px -4px hsl(21 90% 48% / 0.25);
+    --shadow-glow: 0 0 40px hsl(21 90% 48% / 0.3);
+
+    --sidebar-background: 33 100% 96%;
+    --sidebar-foreground: 20 14% 10%;
+    --sidebar-primary: 21 90% 48%;
+    --sidebar-primary-foreground: 33 100% 96%;
+    --sidebar-accent: 30 100% 83%;
+    --sidebar-accent-foreground: 20 14% 10%;
+    --sidebar-border: 30 30% 80%;
+    --sidebar-ring: 21 90% 48%;
+  }
+
+  .dark {
+    --background: 20 14% 8%;
+    --foreground: 33 100% 96%;
+
+    --card: 20 20% 12%;
+    --card-foreground: 33 100% 96%;
+
+    --popover: 20 20% 10%;
+    --popover-foreground: 33 100% 96%;
+
+    --primary: 21 90% 55%;
+    --primary-foreground: 20 14% 10%;
+
+    --secondary: 30 60% 40%;
+    --secondary-foreground: 33 100% 96%;
+
+    --muted: 20 20% 18%;
+    --muted-foreground: 30 20% 60%;
+
+    --accent: 45 100% 55%;
+    --accent-foreground: 20 14% 10%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 33 100% 96%;
+
+    --border: 20 20% 20%;
+    --input: 20 20% 18%;
+    --ring: 21 90% 55%;
+
+    --sidebar-background: 20 14% 10%;
+    --sidebar-foreground: 33 100% 96%;
+    --sidebar-primary: 21 90% 55%;
+    --sidebar-primary-foreground: 20 14% 10%;
+    --sidebar-accent: 20 20% 15%;
+    --sidebar-accent-foreground: 33 100% 96%;
+    --sidebar-border: 20 20% 20%;
+    --sidebar-ring: 21 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, .font-display {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer components {
+  .text-gradient-fire {
+    background: var(--gradient-fire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-hero {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-bounce-subtle {
+    animation: bounce-subtle 2s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes bounce-subtle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes shake-bug {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+  }
+  
+  .animate-shake-bug {
+    animation: shake-bug 0.5s ease-in-out infinite;
+  }
+  
+  @keyframes live-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  .animate-live-pulse {
+    animation: live-pulse 1.5s ease-in-out infinite;
+  }
+}

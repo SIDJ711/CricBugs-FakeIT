@@ -242,16 +242,28 @@ const Match = () => {
   const currentScore = currentInnings === 1 ? score1 : score2;
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <NavBar />
-      {/* UI unchanged — your existing JSX continues */}
-      <Footer />
-      <TeamPreferencesModal
-        isOpen={showPreferences}
-        onClose={() => setShowPreferences(false)}
-      />
-    </div>
-  );
-};
+  <div className="min-h-screen flex flex-col">
+    <NavBar />
+
+    <main className="flex-1 py-8">
+      <div className="container mx-auto px-4">
+        {/* 🔴 YOUR FULL MATCH UI HERE */}
+        {/* Scoreboard */}
+        {/* Commentary */}
+        {/* TeamTakes */}
+        {/* Sidebar */}
+      </div>
+    </main>
+
+    <Footer />
+
+    <TeamPreferencesModal
+      isOpen={showPreferences}
+      onClose={() => setShowPreferences(false)}
+    />
+  </div>
+);
+
+
 
 export default Match;
